@@ -1,0 +1,76 @@
+\documentclass[12pt,addpoints]{exam}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+\usepackage{tikz}
+
+\newcommand{\class}{Оптимизация}
+\newcommand{\term}{Осенний семестр 2017- 2018}
+\newcommand{\examnum}{Тест 2}
+\newcommand{\examdate}{1/1/2014}
+\newcommand{\timelimit}{60 Minutes}
+
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Стр \thepage\ из \numpages}{\examdate}
+\runningheadrule
+
+\def\width{16}
+\def\hauteur{7}
+\pointpoints{балл}{баллов}
+\hpword{Баллов:}
+\hqword{Задача}
+\htword{Итог}
+\hsword{Оценка:}
+\vpword{Баллов:}
+\vqword{Задача}
+\vtword{Итог}
+\vsword{Оценка:}
+
+\begin{document}
+	
+	\noindent
+	\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+		\textbf{\class} & \textbf{ФИО:} & \makebox[3in]{\hrulefill}\\
+		\textbf{\term} &&\\
+		\textbf{\examnum} &&
+	\end{tabular*}\\
+	\rule[2ex]{\textwidth}{2pt}
+	
+	
+	
+	\begin{questions}
+		\question[5] Используя геометрические интерпретации, решить экстремальную задачу: $extr (x_1^2 + x_2^2)$ при условии: \{$x: x_1 x_2 \le 0; |x_2 - x_1| \le 2$\}
+		
+		\begin{center}
+			\begin{tikzpicture}[x=1cm, y=1cm, semitransparent]
+			\draw[step=1mm, line width=0.1mm, black!30!white] (0,0) grid (\width,\hauteur);
+			\draw[step=5mm, line width=0.2mm, black!40!white] (0,0) grid (\width,\hauteur);
+			\draw[step=5cm, line width=0.5mm, black!50!white] (0,0) grid (\width,\hauteur);
+			\draw[step=1cm, line width=0.3mm, black!90!white] (0,0) grid (\width,\hauteur);
+			\end{tikzpicture}
+		\end{center}
+		
+		\question[5] Используя геометрические интерпретации, решить экстремальную задачу: $extr (x_1 + 2x_2)$ при условии: \{$x: x_1^2 + x_2^2 \le 1; x_1 - x_2 \le 0 $\}
+		
+		\begin{center}
+			\begin{tikzpicture}[x=1cm, y=1cm, semitransparent]
+			\draw[step=1mm, line width=0.1mm, black!30!white] (0,0) grid (\width,\hauteur);
+			\draw[step=5mm, line width=0.2mm, black!40!white] (0,0) grid (\width,\hauteur);
+			\draw[step=5cm, line width=0.5mm, black!50!white] (0,0) grid (\width,\hauteur);
+			\draw[step=1cm, line width=0.3mm, black!90!white] (0,0) grid (\width,\hauteur);
+			\end{tikzpicture}
+		\end{center}
+		
+		\begin{center}
+			\gradetable[h]
+		\end{center}
+	\end{questions}
+
+
+
+\end{document}
