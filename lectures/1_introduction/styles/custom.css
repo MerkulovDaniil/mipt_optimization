@@ -31,8 +31,8 @@
         font-family: 'Alegreya Sans',Computer Modern, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
         line-height: 1.2;
         font-size: 120%;
-        /*width:70%;*/
-        /*margin-left:auto;*/
+        width:99%;
+        margin-left:auto;
         margin-right:auto;
     }
     .CodeMirror{
@@ -53,13 +53,19 @@
     }
     .text_cell_render h5 {
         font-weight: 300;
-        font-size: 16pt;
+        font-size: 24pt;
         color: #CD2305;
         font-style: italic;
         margin-bottom: .5em;
         margin-top: 0.5em;
         display: block;
     }
+
+    /*div.cell{
+        width:99%;
+        margin-left:1%;
+        margin-right:1%; ! important
+    }*/
 
     li {
         line-height: 110%;
