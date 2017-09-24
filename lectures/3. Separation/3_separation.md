@@ -124,7 +124,7 @@ $$d(S_1, S_2,\| \cdot \|) = \underset{\mathbf{x_1} \in S_1, \mathbf{x_2} \in S_2
 
 ## Supporting hyperplane
 ### Опорная гиперплоскость
-Гиперплоскость $\Gamma_{p,\beta} = \left\{\mathbf{x} \in \mathbb{R}^n : \langle p, \mathbf{x} \rangle > \beta \right\}$ называется опорной к множеству $S$ в граничной точке $\mathbf{a} \in \partial S$, если $$\langle p, \mathbf{x} \rangle \ge \beta = \langle p, \mathbf{a} \rangle \;\; \forall \mathbf{x} \in S$$
+Гиперплоскость $\Gamma_{p,\beta} = \left\{\mathbf{x} \in \mathbb{R}^n : \langle p, \mathbf{x} \rangle = \beta \right\}$ называется опорной к множеству $S$ в граничной точке $\mathbf{a} \in \partial S$, если $$\langle p, \mathbf{x} \rangle \ge \beta = \langle p, \mathbf{a} \rangle \;\; \forall \mathbf{x} \in S$$
 
 Опорная гиперплоскость называется *собственно опорной*, если, кроме того, можно указать $\mathbf{x_0} \in S: \langle p, \mathbf{x_0} \rangle > \beta$
 
