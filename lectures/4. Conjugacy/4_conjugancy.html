@@ -11905,8 +11905,8 @@ $$p^T x = p^T \left(-\frac{p}{\|p\|}r \right) = -\|p\|r \ge -1$$
 $$\|p\| \le \frac{1}{r} \in Y$$
   Значит, $X^* \subset Y$</li>
 <li>Теперь пусть $p \in Y$, возьмем так же $x = -\frac{p}{\|p\|}r$. 
-[p^T x = -r | p| \ge -1 \rightarrow p \in X^<em>]
-  Значит, $Y \subset X^</em>$</li>
+$$p^T x = -r \| p\| \ge -1 \rightarrow p \in X^*$$
+  Значит, $Y \subset X^*$</li>
 </ul>
 
 </div>
@@ -11947,7 +11947,7 @@ $$\left( \bigcap\limits_{i=1}^m K_i \right)^* = \sum\limits_{i=1}^m K_i^*$$</li>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="&#1055;&#1088;&#1080;&#1084;&#1077;&#1088;-4">&#1055;&#1088;&#1080;&#1084;&#1077;&#1088; 4<a class="anchor-link" href="#&#1055;&#1088;&#1080;&#1084;&#1077;&#1088;-4">&#182;</a></h4><p>Найти сопряженнй конус для монотонного неотрицательного конуса: [ K = \left{ x \in \mathbb{R}^n \mid x_1 \ge x_2 \ge \ldots \ge x_n \ge 0\right}]</p>
+<h4 id="&#1055;&#1088;&#1080;&#1084;&#1077;&#1088;-4">&#1055;&#1088;&#1080;&#1084;&#1077;&#1088; 4<a class="anchor-link" href="#&#1055;&#1088;&#1080;&#1084;&#1077;&#1088;-4">&#182;</a></h4><p>Найти сопряженнй конус для монотонного неотрицательного конуса: $$ K = \left\{ x \in \mathbb{R}^n \mid x_1 \ge x_2 \ge \ldots \ge x_n \ge 0\right\}$$</p>
 <p>Решение:</p>
 <p>Заметим, что:</p>
 $$\sum\limits_{i=1}^nx_iy_i = y_1 (x_1-x_2) + (y_1 + y_2)(x_2 - x_3) + \ldots + (y_1 + y_2 + \ldots + y_{n-1})(x_{n-1} - x_n) + (y_1 + \ldots + y_n)x_n$$<p><code>░░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄░░░░░░░
@@ -11990,19 +11990,17 @@ $$Ax \preceq b, \;\;\; Cx = d$$
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="&#1058;&#1077;&#1086;&#1088;&#1077;&#1084;&#1072;:">&#1058;&#1077;&#1086;&#1088;&#1077;&#1084;&#1072;:<a class="anchor-link" href="#&#1058;&#1077;&#1086;&#1088;&#1077;&#1084;&#1072;:">&#182;</a></h4><p>Пусть $x_1, \ldots, x_m \in \mathbb{R}^n$. Сопряженным к многогранному множеству:</p>
-<p>[ S = \mathbf{conv}(x_1, \ldots, x<em>k) + \mathbf{cone}(x</em>{k+1}, \ldots, x_m) ]</p>
-<p>является полиэдр (многогранник):</p>
-<p>[ S^* = \left{ p \in \mathbb{R}^n \mid \langle p, x_i\rangle \ge -1, i = \overline{1,k} ; \langle p, x_i\rangle \ge 0, i = \overline{k+1,m} \right}]</p>
-<h4 id="&#1044;&#1086;&#1082;&#1072;&#1079;&#1072;&#1090;&#1077;&#1083;&#1100;&#1089;&#1090;&#1074;&#1086;:">&#1044;&#1086;&#1082;&#1072;&#1079;&#1072;&#1090;&#1077;&#1083;&#1100;&#1089;&#1090;&#1074;&#1086;:<a class="anchor-link" href="#&#1044;&#1086;&#1082;&#1072;&#1079;&#1072;&#1090;&#1077;&#1083;&#1100;&#1089;&#1090;&#1074;&#1086;:">&#182;</a></h4><ul>
+$$ S = \mathbf{conv}(x_1, \ldots, x_k) + \mathbf{cone}(x_{k+1}, \ldots, x_m) $$<p>является полиэдр (многогранник):</p>
+$$ S^* = \left\{ p \in \mathbb{R}^n \mid \langle p, x_i\rangle \ge -1, i = \overline{1,k} ; \langle p, x_i\rangle \ge 0, i = \overline{k+1,m} \right\}$$<h4 id="&#1044;&#1086;&#1082;&#1072;&#1079;&#1072;&#1090;&#1077;&#1083;&#1100;&#1089;&#1090;&#1074;&#1086;:">&#1044;&#1086;&#1082;&#1072;&#1079;&#1072;&#1090;&#1077;&#1083;&#1100;&#1089;&#1090;&#1074;&#1086;:<a class="anchor-link" href="#&#1044;&#1086;&#1082;&#1072;&#1079;&#1072;&#1090;&#1077;&#1083;&#1100;&#1089;&#1090;&#1074;&#1086;:">&#182;</a></h4><ul>
 <li><p>Пусть $S = X, S^* = Y$. Возьмем некоторый $p \in X^*$, тогда $\langle p, x_i\rangle \ge -1,  i = \overline{1,k}$.</p>
-<p>В то же время для любых $\theta > 0, i = \overline{k+1,m}$: [\langle p, x_i\rangle \ge -1 \to \langle p, \theta x_i\rangle \ge -1]
-[\langle p, x_i\rangle \ge -\frac{1}{\theta} \to \langle p, x_i\rangle \ge 0 ]</p>
+<p>В то же время для любых $\theta > 0, i = \overline{k+1,m}$: $$\langle p, x_i\rangle \ge -1 \to \langle p, \theta x_i\rangle \ge -1$$
+$$\langle p, x_i\rangle \ge -\frac{1}{\theta} \to \langle p, x_i\rangle \ge 0 $$</p>
 <p>Значит, $p \in Y \to X^* \subset Y$</p>
 </li>
 <li><p>Пусть, напротив, $p \in Y$. Для любой точки $x \in X$:
-[ x = \sum\limits_{i=1}^m\theta_i x<em>i \;\;\;\;\;\; \sum\limits</em>{i=1}^k\theta_i = 1, \theta_i \ge 0]</p>
+$$ x = \sum\limits_{i=1}^m\theta_i x_i \;\;\;\;\;\; \sum\limits_{i=1}^k\theta_i = 1, \theta_i \ge 0$$</p>
 <p>Значит:
-[ \langle p, x\rangle = \sum\limits_{i=1}^m\theta_i \langle p, x<em>i\rangle  = \sum\limits</em>{i=1}^k\theta_i \langle p, x<em>i\rangle + \sum\limits</em>{i=k+1}^m\theta_i \langle p, x<em>i\rangle \ge \sum\limits</em>{i=1}^k\theta<em>i (-1) + \sum\limits</em>{i=1}^k\theta_i \cdot 0 = -1]</p>
+$$ \langle p, x\rangle = \sum\limits_{i=1}^m\theta_i \langle p, x_i\rangle  = \sum\limits_{i=1}^k\theta_i \langle p, x_i\rangle + \sum\limits_{i=k+1}^m\theta_i \langle p, x_i\rangle \ge \sum\limits_{i=1}^k\theta_i (-1) + \sum\limits_{i=1}^k\theta_i \cdot 0 = -1$$</p>
 <p>Значит, $p \in X^* \to Y \subset X^*$</p>
 </li>
 </ul>
@@ -12016,10 +12014,9 @@ $$Ax \preceq b, \;\;\; Cx = d$$
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="&#1055;&#1088;&#1080;&#1084;&#1077;&#1088;-5">&#1055;&#1088;&#1080;&#1084;&#1077;&#1088; 5<a class="anchor-link" href="#&#1055;&#1088;&#1080;&#1084;&#1077;&#1088;-5">&#182;</a></h4><p>Найти и изобразить на плоскости множество, сопряженное к многогранному конусу:</p>
-<p>[ S = \mathbf{cone} \left{ (-3,1), (2,3), (4,5)\right} ]</p>
-<p>Решение:</p>
+$$ S = \mathbf{cone} \left\{ (-3,1), (2,3), (4,5)\right\} $$<p>Решение:</p>
 <p>Используя теорему выше: 
-[ S^* = \left{ -3p_1 + p_2 \ge 0, 2p_1 + 3p_2 \ge 0, 4p_1+5p_2 \ge 0 \right} ]</p>
+$$ S^* = \left\{ -3p_1 + p_2 \ge 0, 2p_1 + 3p_2 \ge 0, 4p_1+5p_2 \ge 0 \right\} $$</p>
 
 </div>
 </div>
@@ -12047,7 +12044,7 @@ $$2) \; pA = 0, \langle p,b\rangle < 0, p \ge 0$$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="&#1058;&#1077;&#1086;&#1088;&#1077;&#1084;&#1072;">&#1058;&#1077;&#1086;&#1088;&#1077;&#1084;&#1072;<a class="anchor-link" href="#&#1058;&#1077;&#1086;&#1088;&#1077;&#1084;&#1072;">&#182;</a></h4><p>Пусть $A \in \mathbb{R}^{m \times n}$, $b \in \mathbb{R}^m$. Если полиэдр (многогранник) [ P = \left{ x \in \mathbb{R}^n \mid Ax \le b\right}] непуст, то сопряженным к нему является множество [ P^* = \left{ p \in \mathbb{R}^n \mid p = qA \text{ при некотором } q \ge 0 , \langle q, b\rangle \ge -1\right} ]</p>
+<h4 id="&#1058;&#1077;&#1086;&#1088;&#1077;&#1084;&#1072;">&#1058;&#1077;&#1086;&#1088;&#1077;&#1084;&#1072;<a class="anchor-link" href="#&#1058;&#1077;&#1086;&#1088;&#1077;&#1084;&#1072;">&#182;</a></h4><p>Пусть $A \in \mathbb{R}^{m \times n}$, $b \in \mathbb{R}^m$. Если полиэдр (многогранник) $$ P = \left\{ x \in \mathbb{R}^n \mid Ax \le b\right\}$$ непуст, то сопряженным к нему является множество $$ P^* = \left\{ p \in \mathbb{R}^n \mid p = qA \text{ при некотором } q \ge 0 , \langle q, b\rangle \ge -1\right\} $$</p>
 
 </div>
 </div>
@@ -12058,10 +12055,10 @@ $$2) \; pA = 0, \langle p,b\rangle < 0, p \ge 0$$</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#1044;&#1086;&#1084;&#1072;&#1096;&#1085;&#1077;&#1077;-&#1079;&#1072;&#1076;&#1072;&#1085;&#1080;&#1077;-4">&#1044;&#1086;&#1084;&#1072;&#1096;&#1085;&#1077;&#1077; &#1079;&#1072;&#1076;&#1072;&#1085;&#1080;&#1077; 4<a class="anchor-link" href="#&#1044;&#1086;&#1084;&#1072;&#1096;&#1085;&#1077;&#1077;-&#1079;&#1072;&#1076;&#1072;&#1085;&#1080;&#1077;-4">&#182;</a></h2><ol>
-<li>Найти и изобразить на плоскости множество, сопряженное к многогранному конусу: [ S = \mathbf{conv} \left{ (-4,-1), (-2,-1), (-2,1)\right} + \mathbf{cone} \left{ (1,0), (2,1)\right} ]</li>
-<li>Найти и изобразить на плоскости множество, сопряженное к полиэдру: [S = \left{ x \in \mathbb{R}^2 \mid -3x_1 + 2x_2 \le 7, x_1 + 5x_2 \le 9, x_1 - x_2 \le 3, -x_2 \le 1\right}]</li>
-<li>Доказать, что если понятие сопряженного множества к множеству $S$ вводить как: [S^* = {y \ \in \mathbb{R}^n \mid \langle y, x\rangle \le 1 \;\; \forall x \in S}, ] то единичный шар с центром в нуле - единственное самосопряженное множество в $\mathbb{R}^n$.</li>
-<li>Найти множество, сопряженное к эллипсоиду: [ S = \left{ x \in \mathbb{R}^n \mid \sum\limits_{i = 1}^n a_i^2 x_i^2 \le \varepsilon^2 \right}]</li>
+<li>Найти и изобразить на плоскости множество, сопряженное к многогранному конусу: $$ S = \mathbf{conv} \left\{ (-4,-1), (-2,-1), (-2,1)\right\} + \mathbf{cone} \left\{ (1,0), (2,1)\right\} $$</li>
+<li>Найти и изобразить на плоскости множество, сопряженное к полиэдру: $$S = \left\{ x \in \mathbb{R}^2 \mid -3x_1 + 2x_2 \le 7, x_1 + 5x_2 \le 9, x_1 - x_2 \le 3, -x_2 \le 1\right\}$$</li>
+<li>Доказать, что если понятие сопряженного множества к множеству $S$ вводить как: $$S^* = \{y \ \in \mathbb{R}^n \mid \langle y, x\rangle \le 1 \;\; \forall x \in S\}, $$ то единичный шар с центром в нуле - единственное самосопряженное множество в $\mathbb{R}^n$.</li>
+<li>Найти множество, сопряженное к эллипсоиду: $$ S = \left\{ x \in \mathbb{R}^n \mid \sum\limits_{i = 1}^n a_i^2 x_i^2 \le \varepsilon^2 \right\}$$</li>
 </ol>
 
 </div>
