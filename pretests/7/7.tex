@@ -1,0 +1,68 @@
+\documentclass[12pt,addpoints]{exam}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{wrapfig}
+\newcommand{\class}{Оптимизация}
+\newcommand{\term}{Осенний семестр 2017- 2018}
+\newcommand{\examnum}{Тест 7}
+\newcommand{\examdate}{1/1/2017}
+\newcommand{\timelimit}{60 Minutes}
+
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Стр \thepage\ из \numpages}{\examdate}
+\runningheadrule
+
+\def\width{16}
+\def\hauteur{7}
+\pointpoints{балл}{баллов}
+\hpword{Баллов:}
+\hqword{Задача}
+\htword{Итог}
+\hsword{Оценка:}
+\vpword{Баллов:}
+\vqword{Задача}
+\vtword{Итог}
+\vsword{Оценка:}
+
+\begin{document}
+	
+	\noindent
+	\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+		\textbf{\class} & \textbf{ФИО:} & \makebox[3in]{\hrulefill}\\
+		\textbf{\term} &&\\
+		\textbf{\examnum} &&
+	\end{tabular*}\\
+	\rule[2ex]{\textwidth}{2pt}
+	
+	
+	
+	\begin{questions}
+		\question[1] Какая функция называется выпуклой?
+		\fillwithdottedlines{2em}
+		\question[1] Запишите дифференциальный критерий выпуклости второго порядка.
+		\fillwithdottedlines{2em}
+		\question[1] Сформулируйте дифференциальный критерий сильной выпуклости второго порядка.
+		\fillwithdottedlines{2em}
+		\question[2] Пусть есть две выпуклые функции $f,g$. Приведите примеры, когда их произведение и частное выпукло и не выпукло. Ответом являются 4 примера двух функций $f$ и $g$.
+		\fillwithdottedlines{7em}
+	
+		\question[5] Доказать с помощью любого из дифференциальных критериев выпуклость функции $$f(x_1, \ldots, x_n) = \log \left( e^{x_1} + e^{x_2} + \ldots + e^{x_n}\right)$$
+		\fillwithdottedlines{17em}
+		
+		\begin{center}
+				\tiny
+				\gradetable[h]
+		\end{center}
+	
+	\end{questions}
+
+
+
+\end{document}
