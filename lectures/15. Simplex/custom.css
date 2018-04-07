@@ -1,0 +1,93 @@
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400' rel='stylesheet' type='text/css'>
+<style>
+    @font-face {
+        font-family: "Computer Modern";
+        src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+    }
+    div.cell{
+        /*width:80%;*/
+        /*margin-left:auto !important;
+        margin-right:auto;*/
+    }
+    h1 {
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    h2 {
+        font-family: 'Open Sans', serif;
+    }
+    h3{
+		font-family: 'Open Sans', serif;
+        margin-top:12px;
+        margin-bottom: 3px;
+       }
+	h4{
+		font-family: 'Open Sans', serif;
+       }
+    h5 {
+        font-family: 'Open Sans', sans-serif;
+    }
+    div.text_cell_render{
+        font-family: 'Alegreya Sans',Computer Modern, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+        line-height: 1.2;
+        font-size: 120%;
+        width:99%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .CodeMirror{
+            font-family: "Source Code Pro";
+			font-size: 90%;
+    }
+/*    .prompt{
+        display: None;
+    }*/
+    .text_cell_render h1 {
+        font-weight: 200;
+        font-size: 50pt;
+		line-height: 110%;
+        color:#CD2305;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        display: block;
+    }
+    .text_cell_render h5 {
+        font-weight: 300;
+        font-size: 24pt;
+        color: #CD2305;
+        font-style: italic;
+        margin-bottom: .5em;
+        margin-top: 0.5em;
+        display: block;
+    }
+
+    /*div.cell{
+        width:99%;
+        margin-left:1%;
+        margin-right:1%; ! important
+    }*/
+
+    li {
+        line-height: 110%;
+    }
+    .warning{
+        color: rgb( 240, 20, 20 )
+        }
+
+</style>
+
+<script>
+    MathJax.Hub.Config({
+                        TeX: {
+                           extensions: ["AMSmath.js"]
+                           },
+                tex2jax: {
+                    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+                },
+                displayAlign: 'center', // Change this to 'center' to center equations.
+                "HTML-CSS": {
+                    styles: {'.MathJax_Display': {"margin": 4}}
+                }
+        });
+</script>
